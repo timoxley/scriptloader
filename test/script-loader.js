@@ -6,6 +6,7 @@ if (!window.testPassed) {
     window.testPassed = done
   })
 } else {
+  mocha.options.globals.push['testPassed']
   window.testPassed()
 }
 
