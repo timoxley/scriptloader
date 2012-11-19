@@ -10,8 +10,9 @@
 ## API
 
 ```js
-addScript('//my-widget.js') // load js from current domain
-addScript('//remote.com/their-widget.js') // load js from remote domain
+var loadScript = require('script-loader')
+loadScript('//my-widget.js') // load js from current domain
+loadScript('//remote.com/their-widget.js') // load js from remote domain
 ```
 
 #### What is this sorcery?
