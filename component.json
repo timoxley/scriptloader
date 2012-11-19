@@ -1,0 +1,13 @@
+{
+  "name": "script-loader",
+  "repo": "timoxley/script-loader",
+  "description": "Absurdly simple script loader.",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}
