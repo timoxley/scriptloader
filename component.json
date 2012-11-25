@@ -2,10 +2,12 @@
   "name": "script-loader",
   "repo": "timoxley/script-loader",
   "description": "Absurdly simple on-demand script loader.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": [],
   "dependencies": {},
-  "development": {},
+  "development": {
+    "timoxley/assert": "*"
+  },
   "license": "MIT",
   "scripts": [
     "index.js"

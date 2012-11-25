@@ -1,16 +1,16 @@
+var assert = require('timoxley-assert')
 describe('script loader', function() {
-  beforeEach(function() {
-    mocha.options.globals.push['testPassed']
-  })
   var loadScript = require('script-loader')
-  if (!window.testPassed) {
-    it('can load remote scripts', function(done) {
-      window.testPassed = done
-      loadScript('https://raw.github.com/timoxley/script-loader/master/test/script-loader.js')
+  it('can load remote scripts', function(done) {
+    loadScript('//cdnjs.cloudflare.com/ajax/libs/json3/3.2.4/json3.min.js').onLoad(function(err, script) {
+      assert.ifError(err)
+      done()
     })
-  } else {
-    it('loaded remote script', function() {
-      window.testPassed()
+  })
+  it('handles failed scripts', function(done) {
+    loadScript('//csdfsdfjhkbsdf.js').onLoad(function(err) {
+      assert.ok(err)
+      done()
     })
-  }
+  })
 })

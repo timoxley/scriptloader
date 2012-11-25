@@ -10,9 +10,12 @@
 ## API
 
 ```js
-var loadScript = require('script-loader')
-loadScript('//my-widget.js') // load js from current domain
-loadScript('//remote.com/their-widget.js') // load js from remote domain
+var load = require('script-loader')
+load('//my-widget.js') // load js from current domain
+load('//remote.com/their-widget.js') // load js from remote domain
+load('//cdnjs.cloudflare.com/ajax/libs/json3/3.2.4/json3.min.js').addEventListener('load', function() {
+  console.log()
+})
 ```
 
 #### What is this sorcery?
@@ -28,7 +31,6 @@ if they're created using `innerHTML`, which is how `domify` works.
 
 ## TODO
 
-* Add loading progress/complete events.
 * Consider removing `<script>` after it loads?
 * investigate script's `async` attribute.
 
