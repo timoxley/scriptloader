@@ -1,4 +1,3 @@
-
 # script-loader
 
   Absurdly simple on-demand script loader.
@@ -21,7 +20,7 @@ load('//cdnjs.cloudflare.com/ajax/libs/json3/3.2.4/json3.min.js').addEventListen
 #### What is this sorcery?
 
 It just appends a `script` tag to your `document.body` with the `src`
-attribute set to the script you desire to load.
+attribute set to the script you desire to load. No sorcery here.
 
 #### Why not just domify to add a script tag?
 
@@ -33,6 +32,10 @@ if they're created using `innerHTML`, which is how `domify` works.
 
 * Consider removing `<script>` after it loads?
 * investigate script's `async` attribute.
+
+## Credit
+
+[skorffman](https://github.com/skorfmann/) for writing the original code with his own hands.
 
 ## License
 
