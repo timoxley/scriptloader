@@ -11,6 +11,7 @@ module.exports = function addScript(src) {
       script.addEventListener('error', function() {
         fn(new Error('Failed loading script: ' + src))
       })
+      return script
     },
     script: script
   }
