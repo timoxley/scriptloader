@@ -13,7 +13,10 @@ var load = require('script-loader')
 load('//my-widget.js') // load js from current domain
 load('//remote.com/their-widget.js') // load js from remote domain
 load('//cdnjs.cloudflare.com/ajax/libs/json3/3.2.4/json3.min.js').addEventListener('load', function() {
-  console.log()
+  console.log('it is loaded')
+})
+load('//cdnjs.cloudflare.com/ajax/libs/json3/3.2.5/json3.min.js').onLoad(function() {
+  console.log('it is loaded')
 })
 ```
 
