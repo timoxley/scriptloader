@@ -1,6 +1,6 @@
 {
   "name": "scriptloader",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Absurdly simple on-demand script loader.",
   "main": "index.js",
   "directories": {
@@ -15,11 +15,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/timoxley/script-loader.git"
+    "url": "git://github.com/timoxley/scriptloader.git"
   },
   "author": "Tim Oxley",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/timoxley/script-loader/issues"
+    "url": "https://github.com/timoxley/scriptloader/issues"
   }
 }
