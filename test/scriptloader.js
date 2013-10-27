@@ -1,9 +1,14 @@
+"use strict"
+
 var assert = require('timoxley-assert')
+var loadScript = require('scriptloader')
+
 describe('script loader', function() {
-  var loadScript = require('script-loader')
   it('can load remote scripts', function(done) {
-    loadScript('//cdnjs.cloudflare.com/ajax/libs/json3/3.2.4/json3.min.js').onLoad(function(err, script) {
+    loadScript('test.js').onLoad(function(err, script) {
       assert.ifError(err)
+      assert.ok(document.body.classList.contains('success'))
+      document.body.classList.remove('success')
       done()
     })
   })
