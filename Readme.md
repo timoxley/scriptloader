@@ -1,15 +1,15 @@
-# script-loader
+# scriptloader
 
   Absurdly simple on-demand script loader.
 
 ## Installation
 
-    $ component install timoxley/script-loader
+    $ component install timoxley/scriptloader
 
 ## API
 
 ```js
-var load = require('script-loader')
+var load = require('scriptloader')
 load('//my-widget.js') // load js from current domain
 load('//remote.com/their-widget.js') // load js from remote domain
 load('//cdnjs.cloudflare.com/ajax/libs/json3/3.2.4/json3.min.js').addEventListener('load', function() {
@@ -35,10 +35,6 @@ if they're created using `innerHTML`, which is how `domify` works.
 
 * Consider removing `<script>` after it loads?
 * investigate script's `async` attribute.
-
-## Credit
-
-[skorffman](https://github.com/skorfmann/) for writing the original code with his own hands.
 
 ## License
 
