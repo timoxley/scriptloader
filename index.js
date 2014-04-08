@@ -4,11 +4,11 @@ module.exports = function load(src, fn) {
   var script = document.createElement('script')
   script.type = 'text/javascript'
   script.src = src
-  document.body.appendChild(script);
   if (fn) onLoad(script, fn)
   script.onLoad = function(fn) {
     return onLoad(script, fn)
   }
+  document.body.appendChild(script);
   return script
 }
 
