@@ -1,6 +1,6 @@
 {
   "name": "scriptloader",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Absurdly simple on-demand script loader.",
   "main": "index.js",
   "directories": {
