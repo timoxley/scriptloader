@@ -1,6 +1,12 @@
 "use strict"
 
-module.exports = function load(src, fn) {
+module.exports = function load(doc, src, fn) {
+  if (typeof doc === 'string') {
+    fn = src
+    src = doc
+    doc = document
+  }
+
   var script = document.createElement('script')
   script.type = 'text/javascript'
   script.src = src

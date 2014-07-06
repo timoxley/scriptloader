@@ -39,5 +39,21 @@ describe('script loader', function() {
         done()
       })
     })
+
+    describe('with document', function() {
+      it('can load remote scripts', function(done) {
+        loadScript(document, 'http://cdnjs.cloudflare.com/ajax/libs/async/0.9.0/async.js', function(err, script) {
+          expect(err).to.be.null
+          expect(window.async).to.be.ok
+          done()
+        })
+      })
+      it('handles failed scripts', function(done) {
+        loadScript(document, '//csdfsdfjhkbsdf.js', function(err) {
+          expect(err).to.be.ok
+          done()
+        })
+      })
+    })
   })
 })
