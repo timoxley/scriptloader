@@ -51,6 +51,12 @@ if they're created using `innerHTML`, which is how `domify` works.
 * Consider removing `<script>` after it loads?
 * Investigate script's `async` attribute.
 
+## Contributors
+
+* [Alex Gorbatchev](http://github.com/alexgorbatchev)
+* [Dominykas Blyžė](http://github.com/dymonaz)
+* [Jonathan Ong](http://github.com/jonathanong)
+
 ## License
 
   MIT
