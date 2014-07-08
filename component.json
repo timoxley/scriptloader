@@ -3,7 +3,7 @@
   "repo": "timoxley/scriptloader",
   "description": "Absurdly simple on-demand script loader.",
   "version": "1.0.0",
-  "keywords": [],
+  "keywords": ["script", "resource", "ajax", "import"],
   "dependencies": {},
   "development": {
     "timoxley/assert": "*"
