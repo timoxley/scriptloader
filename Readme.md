@@ -6,11 +6,15 @@
 
 ### npm/browserify
 
-  $ npm install scriptloader
+```
+$ npm install scriptloader
+```
 
 ### component
 
-  $ component install timoxley/scriptloader
+```
+$ component install timoxley/scriptloader
+```
 
 ## API
 
