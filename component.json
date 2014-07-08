@@ -2,7 +2,7 @@
   "name": "scriptloader",
   "repo": "timoxley/scriptloader",
   "description": "Absurdly simple on-demand script loader.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "keywords": ["script", "resource", "ajax", "import"],
   "dependencies": {},
   "development": {
