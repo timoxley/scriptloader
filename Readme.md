@@ -28,6 +28,11 @@ load('//cdnjs.cloudflare.com/ajax/libs/json3/3.2.4/json3.min.js').addEventListen
 load('//cdnjs.cloudflare.com/ajax/libs/json3/3.2.5/json3.min.js', function(err, script) {
   console.log('it is loaded')
 })
+
+// also pass target document where you want the script to be loaded
+load(iframe.contentWindow.document, '//cdnjs.cloudflare.com/ajax/libs/json3/3.2.5/json3.min.js', function(err, script) {
+  console.log('it is loaded')
+})
 ```
 
 #### What is this sorcery?
