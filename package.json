@@ -8,7 +8,11 @@
   },
   "keywords": [
     "browserify",
-    "script"
+    "browser",
+    "script",
+    "resource",
+    "ajax",
+    "import"
   ],
   "scripts": {
     "test": "./node_modules/karma/bin/karma start --single-run --no-auto-watch"
@@ -25,9 +29,12 @@
     "karma-phantomjs-launcher": "^0.1.4",
     "watchify": "^0.10.2"
   },
-  "author": "Tim Oxley",
+  "author": "Tim Oxley <secoif@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/timoxley/scriptloader/issues"
+  },
+  "homepage": "https://github.com/timoxley/scriptloader",
+  "dependencies": {
   }
 }
