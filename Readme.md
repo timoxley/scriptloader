@@ -4,13 +4,13 @@
 
 ## Installation
 
-### component
-
-  $ component install timoxley/scriptloader
-
 ### npm/browserify
 
   $ npm install scriptloader
+
+### component
+
+  $ component install timoxley/scriptloader
 
 ## API
 
@@ -29,7 +29,7 @@ load('//cdnjs.cloudflare.com/ajax/libs/json3/3.2.5/json3.min.js', function(err, 
   console.log('it is loaded')
 })
 
-// also pass target document where you want the script to be loaded
+// you can also specify a target document where you want the script to be loaded
 load(iframe.contentWindow.document, '//cdnjs.cloudflare.com/ajax/libs/json3/3.2.5/json3.min.js', function(err, script) {
   console.log('it is loaded')
 })
@@ -42,14 +42,14 @@ attribute set to the script you desire to load.
 
 #### Why not just domify to add a script tag?
 
-Interesting problem. [Unfortunately we can't use domify to do this]((https://github.com/component/domify/issues/14)
+Interesting problem. [Unfortunately we can't use domify to do this](https://github.com/component/domify/issues/14)
 since `<script>` src attributes don't trigger remote loading
 if they're created using `innerHTML`, which is how `domify` works.
 
 ## TODO
 
 * Consider removing `<script>` after it loads?
-* investigate script's `async` attribute.
+* Investigate script's `async` attribute.
 
 ## License
 
