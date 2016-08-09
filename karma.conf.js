@@ -1,4 +1,4 @@
-module.exports = function(config) {
+module.exports = function (config) {
   config.set({
     colors: true,
     frameworks: ['browserify', 'mocha', 'chai'],
@@ -7,5 +7,5 @@ module.exports = function(config) {
     preprocessors: {
       'test/**/*.js': ['browserify']
     }
-  });
-};
+  })
+}

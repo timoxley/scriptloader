@@ -1,6 +1,6 @@
-"use strict"
+'use strict'
 
-module.exports = function load(doc, src, fn) {
+module.exports = function load (doc, src, fn) {
   if (typeof doc === 'string') {
     fn = src
     src = doc
@@ -11,19 +11,19 @@ module.exports = function load(doc, src, fn) {
   script.type = 'text/javascript'
   script.src = src
   if (fn) onLoad(script, fn)
-  script.onLoad = function(fn) {
+  script.onLoad = function (fn) {
     return onLoad(script, fn)
   }
-  doc.body.appendChild(script);
+  doc.body.appendChild(script)
   return script
 }
 
-function onLoad(script, fn) {
-  script.addEventListener('load', function() {
+function onLoad (script, fn) {
+  script.addEventListener('load', function () {
     fn(null, script)
   })
-  script.addEventListener('error', function(err) {
-    fn(new Error('Failed loading script: ' + script.src))
+  script.addEventListener('error', function (err) {
+    fn(new Error('Failed loading script: ' + script.src + '\n' + err))
   })
   return script
 }
